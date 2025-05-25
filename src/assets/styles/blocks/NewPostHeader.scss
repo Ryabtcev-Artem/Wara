@@ -1,0 +1,10 @@
+.new-post-header {
+    background-color: #0d1117;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-block: 10px;
+    &__close {
+        position: relative;
+    }
+}

@@ -1,0 +1,16 @@
+.user-profile {
+    padding-block: 20px;
+    &__logout{
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        padding: 6px;
+        border-radius: 4px;
+    }
+}
+.user-profile-wrapper {
+    position: relative;
+
+    padding: 12px;
+    background-color: #0d1117;
+}

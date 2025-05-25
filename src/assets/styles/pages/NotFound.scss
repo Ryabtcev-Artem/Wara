@@ -1,0 +1,30 @@
+.not-found{
+    position: fixed;
+    z-index: -1;
+    row-gap: 20px;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__back-home{
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #649bc4;
+        font-weight: 500;
+        padding: 10px;
+        border-radius: 4px;
+        transition-duration: .2s;
+        &:hover{
+            background-color: #4b7494;
+        }
+    }
+    &__title{
+        color: #7ab9dd;
+        font-size: 60px;
+        text-align: center;
+    }
+    &__description{
+        text-align: center;
+    }
+}

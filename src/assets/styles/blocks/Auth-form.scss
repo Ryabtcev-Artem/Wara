@@ -1,0 +1,93 @@
+.auth-form-wrapper {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: appear 0.2s linear forwards;
+}
+.auth-form {
+    background-color: #0d1117;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 30px;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px -2px 4px rgba(49, 49, 49, 0.596),
+        2px 0px 4px rgba(49, 49, 49, 0.596),
+        0px 2px 4px rgba(49, 49, 49, 0.596),
+        -2px 0px 4px rgba(49, 49, 49, 0.596);
+    width: 400px;
+    max-width: 90vw;
+    color: white;
+    &__field {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        position: relative;
+        &.to-register {
+            align-items: center;
+        }
+        &.register-agree{
+            flex-direction: row;
+            column-gap: 10px;
+            justify-content: start;
+        }
+    }
+    &__input {
+        background-color: #f1f1f1;
+        border: none;
+        outline: 1px solid gray;
+        color: black;
+        padding: 10px;
+        &:focus {
+            outline: 1px solid #659bc5;
+            background-color: #fff;
+        }
+        &.password {
+            padding-right: 50px;
+        }
+    }
+    &__submit {
+        height: 48px;
+
+        background-color: #659bc5;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+        padding: 14px;
+        cursor: pointer;
+        transition-duration: .2s;
+        &:hover{
+            background-color: #548db8;
+        }
+    }
+    @media (width <490.98px) {
+        padding: 20px;
+        &__recaptcha {
+            transform: scale(0.9);
+            transform-origin: 0 0;
+        }
+    }
+    &__eye {
+        position: absolute;
+        cursor: pointer;
+        top: 36px;
+        right: 10px;
+    }
+    &__close{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transform: scale(1.3);
+    }
+}
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}

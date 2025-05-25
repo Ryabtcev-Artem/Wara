@@ -1,0 +1,23 @@
+.user-previews {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    &__preview {
+        background-color: #0d1117;
+        width: 100%;
+        border: 1px solid #5c5c5c;
+    }
+    &__to-user {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        text-decoration: none;
+        color: white;
+        transition-duration: 0.2s;
+        &:hover {
+            color: #70a1c2;
+        }
+    }
+}

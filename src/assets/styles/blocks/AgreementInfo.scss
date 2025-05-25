@@ -1,0 +1,33 @@
+.agreement {
+    padding: 40px 20px;
+    &__container {
+        background-color: #1f1f1f;
+        outline: 1px solid #fff;
+        padding: 30px;
+        border-radius: 12px;
+        max-width: 800px;
+        margin: 0 auto;
+        color: #fff;
+        line-height: 1.6;
+    }
+    &__title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 16px;
+        margin-bottom: 15px;
+        &--note {
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 40px;
+        }
+    }
+}

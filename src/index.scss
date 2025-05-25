@@ -1,0 +1,125 @@
+@import url("./assets/styles/blocks/Auth-form.scss");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 14px;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #01040a;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.centered {
+    margin-inline: 20%;
+    @media (width <= 1023.98px) {
+        margin-inline: 10%;
+    }
+    @media (width <= 767.98px) {
+        margin-inline: 0px;
+    }
+}
+main {
+    max-width: 1920px;
+    margin-inline: auto;
+}
+button {
+    border: none;
+}
+.close-page {
+    width: 26px;
+    height: 26px;
+    background-color: #213547;
+    border-radius: 4px;
+    cursor: pointer;
+    span {
+        width: 20px;
+        position: absolute;
+        left: 3px;
+        top: 11px;
+        height: 2px;
+        background-color: #fff;
+        &:first-child {
+            rotate: 45deg;
+        }
+        &:last-child {
+            rotate: -45deg;
+        }
+    }
+}
+.centered-text{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 30px;
+    font-weight: 500;
+}
+.normal-link {
+    background-color: transparent;
+    color: #659bc5;
+    text-decoration: none;
+}
+.not-auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-blue {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: white;
+    text-decoration: none;
+    background-color: #649bc4;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    &:hover {
+        background-color: #5480a1;
+    }
+}
+input,textarea,button,a {
+    font-size: 14px;
+}
+.container {
+    padding-inline: 60px;
+    @media (width <= 1440.98px) {
+        padding-inline: 16px;
+    }
+}
+.red {
+    color: red;
+}
+input:focus,
+button:focus,
+a:focus,
+textarea:focus {
+    outline: none;
+}
+input:focus-visible,
+button:focus-visible,
+a:focus-visible,
+textarea:focus-visible {
+    outline: 1px solid white;
+}
+.hidden {
+    display: none !important;
+}
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: #000 !important; // если вдруг текст перекрашивается
+}

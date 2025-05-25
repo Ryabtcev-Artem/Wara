@@ -1,0 +1,15 @@
+.auth-form {
+    &__forgot-password {
+        background-color: transparent;
+        color: #659bc5;
+        text-decoration: none;
+        width: fit-content;
+    }
+    &__to-register {
+        color: #659bc5;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}

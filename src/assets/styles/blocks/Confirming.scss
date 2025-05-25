@@ -1,0 +1,38 @@
+.auth-form {
+    &__send-again {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #649bc4;
+        padding: 14px;
+        height: 48px;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid #649bc4;
+        }
+        &.sending {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                height: 100%;
+                width: 0;
+                top: 0;
+                background-color: #5279978c;
+                animation: sending 2s cubic-bezier(0.5, 0.05, 0.1, 0.3) forwards;
+            }
+            opacity: 0.7;
+            cursor: not-allowed;
+            &:hover {
+                border: 1px solid #649bc4;
+            }
+        }
+    }
+}
+@keyframes sending {
+    to{
+        width: 100%;
+    }
+}

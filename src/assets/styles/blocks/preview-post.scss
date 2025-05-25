@@ -1,0 +1,33 @@
+.preview-post-wrapper{
+    background-color: #0d1117;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #5c5c5c;
+}
+.preview-post{
+    &__top{
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+    }
+    &__avatar{
+        border-radius: 4px;
+    }
+    &__username{
+        transition-duration: .2s;
+        &:hover{
+            color: #649bc4;
+        }
+    }
+    &__title{
+        margin-top: 6px;
+    }
+    &__to-user{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        column-gap: 5px;
+    }
+}
