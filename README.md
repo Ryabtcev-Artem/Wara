@@ -1,12 +1,29 @@
-# React + Vite
+# 🌐 Wara — Fullstack MERN-приложение
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Добро пожаловать в **Wara** — современное React-приложение с авторизацией, страницами пользователей и формой создания постов.  
+Фронтенд построен на **Vite + React 19**, бэкенд развернут на **Railway**, а фронт хостится на **Vercel**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Демо
 
-## Expanding the ESLint configuration
+🔗 Фронтенд (Vercel): [https://wara.vercel.app](https://wara.vercel.app)  
+🔗 Бэкенд (Railway): [https://wara-server.up.railway.app](https://wara-server.up.railway.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Технологии
+
+### Фронтенд:
+- ⚛️ React 19 + React Router 7
+- ⚡️ Vite
+- 🎨 SCSS-модули
+- 📦 Axios для API-запросов
+- ✅ React Hook Form + ReCAPTCHA
+
+### Бэкенд:
+- 🧠 Node.js + Express
+- 🐒 MongoDB (через Mongoose)
+- 🔐 JWT + bcrypt для авторизации
+- 🍪 Куки и защита маршрутов
+- 🌍 Railway деплой
