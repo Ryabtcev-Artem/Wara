@@ -7,7 +7,7 @@
 
 ## 🚀 Демо
 
-🔗 Фронтенд (Vercel): [https://wara.vercel.app](https://wara.vercel.app)  
+🔗 Фронтенд (Vercel): [https://wara.vercel.app](https://wara-eta.vercel.app)  
 🔗 Бэкенд (Railway): [https://wara-server.up.railway.app](https://wara-server.up.railway.app)
 
 ---
