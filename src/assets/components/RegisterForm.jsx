@@ -181,7 +181,7 @@ export default function RegisterForm() {
                 <div className="auth-form__field">
                     <ReCAPTCHA
                         className="auth-form__recaptcha"
-                        sitekey="6Le-GUYrAAAAANj-_7HXKO_tG9OLAJEZ0Is3-7vv"
+                        sitekey="6LdllUgrAAAAABJUe6-1Pz-4FNpfaziCMf6Z3_uQ"
                         onChange={onCaptchaChacnge}
                     />
                     {!isRECAPTCHACompleted && isFormSubmitted && (
