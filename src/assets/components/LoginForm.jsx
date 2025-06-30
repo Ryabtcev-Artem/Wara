@@ -54,7 +54,7 @@ export default function LoginForm() {
         }
     };
     const onCaptchaChacnge = async (token) => {
-        const result = await axios.post("https://wara-server.up.railway.app/api/tokens", {
+        const result = await axios.post("https://wara-server.onrender.com/api/tokens", {
             token,
         });
         if (result.data.verified === true) {
