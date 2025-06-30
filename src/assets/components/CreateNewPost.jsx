@@ -22,7 +22,7 @@ export default function CreateNewPost() {
         button.classList.add("publishing");
         try {
             const response = await axios.post(
-                "https://wara-server.up.railway.app/api/posts",
+                "https://wara-server.onrender.com/api/posts",
                 {
                     title: data.title,
                     text: data.textarea,
