@@ -23,7 +23,7 @@ export default function UserProfile() {
     const logout = async () => {
         try {
             await axios.post(
-                "https://wara-server.up.railway.app/api/logout",
+                "https://wara-server.onrender.com/api/logout",
                 {},
                 {
                     withCredentials: true,
@@ -39,7 +39,7 @@ export default function UserProfile() {
         const fetchUser = async () => {
             try {
                 const response = await axios.get(
-                    `https://wara-server.up.railway.app/api/users`
+                    `https://wara-server.onrender.com/api/users`
                 );
                 const allUsers = response.data;
                 const normalizedLogin = login.toLowerCase().trim();
