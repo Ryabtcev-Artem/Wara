@@ -11,7 +11,7 @@ export default function Users() {
         const getAllUsers = async () => {
             try {
                 const response = await axios.get(
-                    "https://wara-server.up.railway.app/api/users"
+                    "https://wara-server.onrender.com/api/users"
                 );
                 const users = response.data;
                 setAllUsers(users);
