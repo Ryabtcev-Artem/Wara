@@ -12,7 +12,7 @@ export function AuthProvider({ children }) {
 
     const checkAuth = useCallback(async () => {
         try {
-            const response = await axios.get("https://wara-server.up.railway.app/api/check-auth", {
+            const response = await axios.get("https://wara-server.onrender.com/api/check-auth", {
                 withCredentials: true,
             });
             setAuthData(response.data);
