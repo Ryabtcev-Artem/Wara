@@ -8,7 +8,7 @@ export default function AllPosts() {
     async function getData() {
         try {
             const postsData = await axios.get(
-                "https://wara-server.up.railway.app/api/posts"
+                "https://wara-server.onrender.com/api/posts"
             );
             setPosts(postsData.data);
         } catch (err) {
