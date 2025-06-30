@@ -27,7 +27,7 @@ export default function RegisterForm() {
         }
         const normalizedEmail = data.email.toLowerCase().trim();
         const normalizedLogin = data.login.toLowerCase().trim();
-        const response = await axios.get("https://wara-server.up.railway.app/api/users");
+        const response = await axios.get("https://wara-server.onrender.com/api/users");
         const allUsers = response.data;
 
         for (let user of allUsers) {
@@ -47,7 +47,7 @@ export default function RegisterForm() {
             }
         }
         const sendCode = await axios.post(
-            "https://wara-server.up.railway.app/api/send-email",
+            "https://wara-server.onrender.com/api/send-email",
             { email: normalizedEmail }
         );
         const result = sendCode.data;
@@ -65,7 +65,7 @@ export default function RegisterForm() {
         reset();
     };
     const onCaptchaChacnge = async (token) => {
-        const result = await axios.post("https://wara-server.up.railway.app/api/tokens", {
+        const result = await axios.post("https://wara-server.onrender.com/api/tokens", {
             token,
         });
         if (result.data.verified === true) {
