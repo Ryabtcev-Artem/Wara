@@ -99,7 +99,7 @@ export default function Confirm() {
                                     clearTimeout(timeout);
                                 }, 2100);
                                 const response = await axios.post(
-                                    "https://wara-server.up.railway.app/api/send-email",
+                                    "https://wara-server.onrender.com/api/send-email",
                                     { email: email }
                                 );
                                 setCurrentCode(response.data.code);
