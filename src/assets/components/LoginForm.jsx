@@ -29,7 +29,7 @@ export default function LoginForm() {
         }
         const normalizedLogin = data.login.toLowerCase().trim();
         const response = await axios.post(
-            "https://wara-server.up.railway.app/api/compare-passwords",
+            "https://wara-server.onrender.com/api/compare-passwords",
             {
                 login: normalizedLogin,
                 password: data.password,
