@@ -27,7 +27,7 @@ export default function Confirm() {
         }
         try {
             await axios.post(
-                "https://wara-server.up.railway.app/api/users",
+                "https://wara-server.onrender.com/api/users",
                 {
                     email: email,
                     login: login,
